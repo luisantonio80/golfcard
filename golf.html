@@ -1,0 +1,211 @@
+<!Doctype html>
+
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="golfdesign.css"> 
+   </head>
+   <title>Golf Card</title>
+   <body>
+      <div id="player_info">
+      <form>
+	  
+		<table>
+			<tr>
+				<th>Number of Players: </th>
+				<th>
+					<select id="numberPlayer">
+						<option>Number of Players</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</th>
+			</tr>
+			<tr>
+				 <th>Player Name: </th>
+				 <th>
+				 <input type="text" id="name"> 
+				 <input type="button" id="okbutton" value="OK" onclick="playern()">
+				 </th>
+			</tr>	
+		</table>
+		<script>
+		
+		</script>
+	  <br />
+      <br />
+	  
+		<table>
+			<tr>
+				<th>Players</th>
+				<th>Hole Number</th>
+				<th>Hole Result</th>
+			</tr>
+			<tr>
+				<th>
+				<select id="selectPlayer">
+					<option>Choose a player</option>
+				</select>
+				</th>
+				<th>
+				<select id="selectHole">
+					<option>Hole</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+				</select>
+				</th>
+				<th><input type="text" id="score" disabled></th>
+				<th><input type="button" id="minus" value="-" onclick="less()"><th/>
+				<th><input type="button" id="plus" value="+" onclick="add()"><th/>
+				<th><input type="button" id="saveresults" value="Save Results" onclick="save()"><th/>
+			</tr>
+		</table>
+       
+          
+      </form>
+     </div>
+	 <br />
+		<table id="card">
+			<tr>
+				<td>Players</td>
+				<td class="width_change">1</td>
+				<td class="width_change">2</td>
+				<td class="width_change">3</td>
+				<td class="width_change">4</td>
+				<td class="width_change">5</td>
+				<td class="width_change">6</td>
+				<td class="width_change">7</td>
+				<td class="width_change">8</td>
+				<td class="width_change">9</td>
+				<td >Score</td>
+				<td class="width_change">10</td>
+				<td class="width_change">11</td>
+				<td class="width_change">12</td>
+				<td class="width_change">13</td>
+				<td class="width_change">14</td>
+				<td class="width_change">15</td>
+				<td class="width_change">16</td>
+				<td class="width_change">17</td>
+				<td class="width_change">18</td>
+				<td>Score</td>
+				<td >Final Score</td>
+			</tr>
+			
+			<tr>
+				<td ></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td ></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td ></td>				
+			</tr>
+			<tr>
+				<td ></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td ></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td ></td>							
+			</tr>
+			<tr>
+				<td></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td ></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td ></td>					
+			</tr>
+			<tr>
+				<td ></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td ></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td class="width_change"></td>
+				<td ></td>					
+			</tr>
+		</table>	 
+    <script src="golfLogic.js"></script>
+   </body>
+
+</html>

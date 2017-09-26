@@ -1,0 +1,14 @@
+/*
+
+	Programmer : Luis Garcia
+        Date       : 09 22 2017
+        CSS for Gold Card
+*/
+#card {
+	width:100%;
+    border: 2px solid black;
+    background: yellow;
+    margin: 150px auto;
+    box-shadow: 0px 0px 100px black;
+    text-align: center;
+}
